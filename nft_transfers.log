@@ -1,0 +1,18 @@
+2024-12-17T09:21:37.423Z - Starting to process 10 NFT transfers in batches of 15
+2024-12-17T09:21:37.423Z - Processing batch 1 of 2 for receiver kraniax.gm
+2024-12-17T09:21:39.797Z - Successfully processed batch 1. Transaction ID: c451a001bf6b3cc24ac45410220d879d4a1d670b4b7a67b13ac35c24b0a4820b
+2024-12-17T09:21:39.797Z - Transferred 5 NFTs to kraniax.gm
+2024-12-17T09:21:39.798Z - Transferred NFT ID: 1099767339191 to kraniax.gm
+2024-12-17T09:21:39.798Z - Transferred NFT ID: 1099767339189 to kraniax.gm
+2024-12-17T09:21:39.799Z - Transferred NFT ID: 1099764939780 to kraniax.gm
+2024-12-17T09:21:39.799Z - Transferred NFT ID: 1099764939777 to kraniax.gm
+2024-12-17T09:21:39.801Z - Transferred NFT ID: 1099764939775 to kraniax.gm
+2024-12-17T09:21:40.802Z - Processing batch 2 of 2 for receiver bzgmo.c.wam
+2024-12-17T09:21:42.950Z - Successfully processed batch 2. Transaction ID: 4ac912c9d18cdc3eeeeb5bc26e230b1566efa8071b2eaf895046bbcef0913612
+2024-12-17T09:21:42.950Z - Transferred 5 NFTs to bzgmo.c.wam
+2024-12-17T09:21:42.951Z - Transferred NFT ID: 1099767339190 to bzgmo.c.wam
+2024-12-17T09:21:42.951Z - Transferred NFT ID: 1099764939779 to bzgmo.c.wam
+2024-12-17T09:21:42.951Z - Transferred NFT ID: 1099764939778 to bzgmo.c.wam
+2024-12-17T09:21:42.952Z - Transferred NFT ID: 1099764939776 to bzgmo.c.wam
+2024-12-17T09:21:42.952Z - Transferred NFT ID: 1099764939739 to bzgmo.c.wam
+2024-12-17T09:21:42.953Z - Finished processing all NFT transfers
