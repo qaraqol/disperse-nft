@@ -1,3 +1,4 @@
+// nft-processor.js
 import { parse } from "papaparse";
 import { sendTransaction } from "./transaction-sender.js";
 import { createLogger } from "./logger.js";
@@ -8,7 +9,7 @@ export async function processNFTTransfersFromCSV(filePath, config) {
 
   parse(fileContent, {
     header: true,
-    dynamicTyping: false,
+    dynamicTyping: false, // Keep as string since asset_ids are large numbers
     skipEmptyLines: true,
     complete: async (results) => {
       const records = results.data;
@@ -18,6 +19,7 @@ export async function processNFTTransfersFromCSV(filePath, config) {
         `Starting to process ${records.length} NFT transfers in batches of ${batchSize}`
       );
 
+      // Group records by receiver
       const groupedByReceiver = records.reduce((acc, record) => {
         if (!acc[record.receiverName]) {
           acc[record.receiverName] = [];
@@ -26,6 +28,7 @@ export async function processNFTTransfersFromCSV(filePath, config) {
         return acc;
       }, {});
 
+      // Convert grouped records to batch-sized transactions
       const transfers = Object.entries(groupedByReceiver).flatMap(
         ([receiver, asset_ids]) => {
           const batches = [];
@@ -81,16 +84,12 @@ export async function processNFTTransfersFromCSV(filePath, config) {
               result.transaction_id
             }`
           );
-          logger.log(
-            `Transferred ${transfer.asset_ids.length} NFTs to ${transfer.receiver}`
-          );
           transfer.asset_ids.forEach((asset_id) => {
             logger.log(
               `Transferred NFT ID: ${asset_id} to ${transfer.receiver}`
             );
           });
 
-          // Add delay between batches
           if (i < transfers.length - 1) {
             await new Promise((resolve) => setTimeout(resolve, 1000));
           }
