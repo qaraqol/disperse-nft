@@ -5,7 +5,7 @@ export const config = {
   senderName: "",
   contractName: "atomicassets",
   memo: "",
-  useTemplateMode: true, // Toggle between template mode and direct NFT transfer mode
+  useTemplateMode: false, // Toggle between template mode and direct NFT transfer mode
   // Template mode specific settings
   collection_name: "farmersworld", // Only used if useTemplateMode is true i.e.farmersworld
   template_id: "260676", // Only used if useTemplateMode is true i.e. farmerscoin

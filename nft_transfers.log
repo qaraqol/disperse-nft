@@ -1,0 +1,10 @@
+2024-12-18T08:47:45.205Z - Starting to process 1 NFT transfers in batches of 15
+2024-12-18T08:47:45.205Z - Processing batch 1 of 1 for receiver bzgmo.c.wam
+2024-12-18T08:47:45.206Z - ERROR: Failed to process batch 1 for bzgmo.c.wam - unrecognized private key type
+2024-12-18T08:47:45.208Z - Failed to transfer NFT ID: 1099744587494 to bzgmo.c.wam
+2024-12-18T08:47:45.208Z - Finished processing all NFT transfers
+2024-12-18T08:48:14.504Z - Starting to process 1 NFT transfers in batches of 15
+2024-12-18T08:48:14.505Z - Processing batch 1 of 1 for receiver bzgmo.c.wam
+2024-12-18T08:48:18.611Z - Successfully processed batch 1. Transaction ID: 9110498cb97a5af2659a4790499df10f7f3629dd19221e7ca510b75ab9751a08
+2024-12-18T08:48:18.612Z - Transferred NFT ID: 1099744587494 to bzgmo.c.wam
+2024-12-18T08:48:18.613Z - Finished processing all NFT transfers

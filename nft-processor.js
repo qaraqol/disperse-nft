@@ -1,4 +1,3 @@
-// nft-processor.js
 import { parse } from "papaparse";
 import { sendTransaction } from "./transaction-sender.js";
 import { createLogger } from "./logger.js";

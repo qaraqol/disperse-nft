@@ -1,4 +1,3 @@
-// app.js
 import { config } from "./config.js";
 import { processTemplateTransfersFromCSV } from "./template-processor.js";
 import { processNFTTransfersFromCSV } from "./nft-processor.js";
